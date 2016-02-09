@@ -1,5 +1,5 @@
 var express	= require('express');
-var pack 	= require('../package.json');
+var pack 	= require('../../package.json');
 var chalk 	= require('chalk');
 
 var app 	= express();

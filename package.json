@@ -1,6 +1,6 @@
 {
   "name": "fndn_express",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Standard Express ^4 extended with sensible defaults",
   "main": "index.js",
   "scripts": {
