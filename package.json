@@ -1,0 +1,16 @@
+{
+  "name": "fndn_express",
+  "version": "0.1.0",
+  "description": "Standard Express ^4 extended with sensible defaults",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express"],
+  "author": "js@fndn.dk",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "chalk": "^1.1.1"
+  }
+}
