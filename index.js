@@ -12,17 +12,23 @@ module.exports = function(){
 	app.set('etag', 'strong');
 
 	app.use(function(req, res, next){
-
-		// separate requests in the log
-		console.log(" ");
-		console.log('---------------------------------------------------------------------');
-		console.log("> req:", req.method, req.url );
-
 		// ignore favicon
 		if (req.path === '/favicon.ico') {
 			res.writeHead(200, {'Content-Type': 'image/x-icon'} );
 			res.end();
 			return;
+		}
+
+		// separate requests in the log
+		if( req.url.indexOf('nonce=') > -1 ){
+			// reach pings
+			console.log('> ping', req.url);
+
+		}else{
+			// all other requests
+			console.log(" ");
+			console.log('---------------------------------------------------------------------');
+			console.log("> req:", req.method, req.url );
 		}
 
 		next();
